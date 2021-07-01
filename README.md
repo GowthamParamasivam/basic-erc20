@@ -19,8 +19,10 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 ``` 
 **step 4**
 Create migration script in migration folder
+
 **step 5**
 Network details will be given in the truffle-config.js
+
 **step 6**
 ```console
 #run in the project root folder
