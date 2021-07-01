@@ -9,8 +9,9 @@ truffle init
 ``` 
 **step 2**
 ```console
-#inside the project root folder
+#install openzeppelin and hdwallet provider in project root
 npm install @openzeppelin/contracts
+npm install truffle-hdwallet-provider
 ``` 
 **step 3**
 ```js
@@ -29,7 +30,7 @@ Create migration script in migration folder, use ganache for local development o
 
 
 **step 5**
-Network details will be given in the truffle-config.js
+Network details will be set in the truffle-config.js
 
 **step 6**
 ```console
