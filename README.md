@@ -18,7 +18,15 @@ npm install @openzeppelin/contracts
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 ``` 
 **step 4**
-Create migration script in migration folder
+Create migration script in migration folder, use ganache for local development or if you are using the ethereum testnet (Rinkeby,Ropsten,Goreli,Kovan etc.) or mainnet, we need to use the infura API. Have a file for storing all your secrets including privatekey and projectId from the infura and use it for the deployment. Sample secrets.json file like
+```json
+{
+    "mnemonic":<YOUR_OWN_MNEMONIC>,
+    "projectID": <YOUR_INFURA_PROJECT_ID>,  
+    "privateKey": <YOUR_PRIVATE_KEY_OF_WALLET>
+}
+``` 
+
 
 **step 5**
 Network details will be given in the truffle-config.js
