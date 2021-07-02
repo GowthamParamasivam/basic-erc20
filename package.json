@@ -3,5 +3,13 @@
     "@openzeppelin/contracts": "^4.2.0",
     "openzeppelin-solidity": "^4.2.0",
     "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/solhint -f table contracts/**/*.sol"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }
