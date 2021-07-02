@@ -10,7 +10,7 @@ contract BasicERC20 is ERC20{
     }
 
         function sumaThan() public returns (string){
-return new string("hello");
+ return new string("hello");
     }
 
 }
