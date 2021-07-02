@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "@openzeppelin/contracts": "^4.2.0",
-    "husky": "^7.0.0",
     "openzeppelin-solidity": "^4.2.0",
     "truffle-hdwallet-provider": "^1.0.17"
   },
@@ -11,6 +10,9 @@
   "husky": {
     "hooks": {
       "pre-commit": "solhint -f table contracts/**/*.sol"
-     }
+    }
+  },
+  "devDependencies": {
+    "husky": "^7.0.0"
   }
 }
