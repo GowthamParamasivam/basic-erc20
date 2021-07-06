@@ -2,17 +2,18 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.2.0",
     "openzeppelin-solidity": "^4.2.0",
-    "truffle-hdwallet-provider": "^1.0.17"
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-security": "^1.7.3"
   },
   "scripts": {
     "lint": "solhint -f table contracts/**/*.sol"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "solhint -f table contracts/**/*.sol"
+      "pre-commit": "npm run lint"
     }
   },
   "devDependencies": {
-    "husky": "^7.0.0"
+    "husky": "^4.3.8"
   }
 }
